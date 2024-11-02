@@ -1,0 +1,12 @@
+.my-button {
+    color: aliceblue;
+    background-color: rgb(87, 223, 178);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 15 px;
+    cursor: pointer;
+}
+
+.my-button:hover{
+    background-color: antiquewhite;
+}
