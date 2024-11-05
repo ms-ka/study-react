@@ -1,6 +1,6 @@
-import "./App.css";
+import "./lesson01.css";
 
-function App() {
+function Lesson01() {
   return (
     <div className="App">
       <h1>React, i'm here ⚛️</h1>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Lesson01;
