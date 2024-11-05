@@ -1,12 +1,25 @@
 .my-button {
     color: aliceblue;
-    background-color: rgb(87, 223, 178);
-    border: none;
-    border-radius: 8px;
-    padding: 7px 15 px;
     cursor: pointer;
+    margin: 1px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: none;
 }
 
-.my-button:hover{
-    background-color: antiquewhite;
+.btn-primary{
+    background-color: rgb(81, 150, 228);
 }
+.btn-danger{
+    background-color: red;
+}
+
+/* styl dla guzika jesli false */
+.btn-primary:hover{
+    background-color: rgb(165, 235, 105);
+}
+/* styl dla guzika jesli true */
+.btn-danger:hover{
+    background-color: rgb(225, 235, 97);
+}
+
