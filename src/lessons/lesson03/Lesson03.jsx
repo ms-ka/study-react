@@ -18,9 +18,9 @@ function Lesson03(){
         <h2>Lesson 03</h2>
         <p>React props</p>
       <div>
-        <MyButton text={'Click me!'} func={handleClick} isDanger={true}/>
-        <MyButton text={'Submit'} func={handleSubmit} isDanger={false}/>
-        <MyButton text={'Reset'} func={handleReset} isDanger={true} />
+        <MyButton type={"button"} text={'Click me!'} func={handleClick} isDanger={true}/>
+        <MyButton type={'submit'} text={'Submit'} func={handleSubmit} isDanger={false} />
+        <MyButton type={'reset'} text={'Reset'} func={handleReset} isDanger={true} />
         <MyButton/> 
         {/* Każdy przycisk MyButton jest wywoływany z różnymi props, dzięki czemu każdy przycisk ma inne działanie i styl. */}
       </div>

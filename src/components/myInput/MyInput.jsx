@@ -1,10 +1,21 @@
-import "./myInput.css";
+import './myInput.css'
 
-function MyInput({ name, type = "text", placeholder = "default text", label = "default label" }) {
+function MyInput({
+  name,
+  type = "text",
+  placeholder = "default text",
+  label = "default label",
+}) {
   return (
     <>
-      <label htmlFor={name}>{label}</label>
-      <input placeholder={placeholder} type={type} name={name} />
+    {/* to element HTML, który wyświetla tekst w interfejsie użytkownika. */}
+      <label htmlFor={name}>{label}</label> 
+      {/* wyświetlony jest tekst label, który jest przekazywany jako props label. */}
+      <input 
+      placeholder={placeholder} //wskazówka wewnątrz okienka
+      type={type} // type domyślnie jest ustawiony jako text
+      name={name} //przypisuje atrybut name do inputu
+      />
     </>
   );
 }

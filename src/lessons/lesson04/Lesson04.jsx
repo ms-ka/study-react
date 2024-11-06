@@ -96,12 +96,12 @@ function Lesson04() {
         <p>Изменение строки:</p>
         <div>
           <span>{name}</span>
-          <MyButton func={handleUpperCase} text={"Change name"} />
+          <MyButton func={handleUpperCase} text={"Change name"} isDanger={false} />
         </div>
         <p>Изменение массива:</p>
         <div>
           <span>{items[0]}, {items[1]}, {items[2]}</span>
-          <MyButton func={handleChangeArray} text={"Change first number"} />
+          <MyButton func={handleChangeArray} text={"Change first number"} isDanger={false} />
         </div>
       </div>
     </div>
