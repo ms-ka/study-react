@@ -15,21 +15,32 @@
 //wariant z destrukturyzacją
 //W tej wersji props jest destrukturyzowany bezpośrednio w parametrach funkcji.
 //używamy znaczenie wg kluczy, używamy klucze obiektu
-import './myButton.css'
+import "./myButton.css";
 
 const handleDefaultClick = () => {
-    console.log( 'default click');
+  console.log("default click");
 };
 
-//Jeśli funkcja kliknięcia (func) nie zostanie przekazana, domyślnie 
+//Jeśli funkcja kliknięcia (func) nie zostanie przekazana, domyślnie
 //wywoła handleDefaultClick, który po prostu loguje „default click” do konsoli.
 
-function MyButton({func=handleDefaultClick, isDanger=true, text='Lets start'}) {
-//Ustawiono domyślne wartości dla func, isDanger i text, co czyni kod bardziej przejrzystym i unika konieczności obsługi undefined wartości.    
+function MyButton({
+  func = handleDefaultClick,
+  isDanger = true,
+  text = "Lets start",
+  type = "button", //dodaję props type
+}) {
+  //Ustawiono domyślne wartości dla func, isDanger i text, co czyni kod bardziej przejrzystym i unika konieczności obsługi undefined wartości.
 
-  return <button onClick={func} 
-  className={`my-button ${isDanger ? 
-  'btn-danger': 'btn-primary'}`}>{text}</button>
+  return (
+    <button
+      onClick={func}
+      className={`my-button ${isDanger ? "btn-danger" : "btn-primary"}`}
+      type = {type} //dodaję atrybut type
+    >
+      {text}
+    </button>
+  );
 }
 
 export default MyButton;
