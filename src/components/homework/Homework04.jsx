@@ -2,12 +2,10 @@ import Feedback from "../feedback/Feedback";
 
 function Homework04(){
     return(
-        <div>
-            <h1>Feedback</h1>
+        <div className="lesson-container">
+            <h2>Homework04</h2>
             <Feedback />
         </div>
     )
 }
-
-
 export default Homework04;
