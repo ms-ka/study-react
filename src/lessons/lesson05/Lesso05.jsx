@@ -9,16 +9,19 @@ function Lesson05() {
       <h2>Lesson 05</h2>
       <p>React map() components</p>
       <section className="grid-container">
-      {heroes.map(hero=>(
-        <HeroCard 
-        key={hero.id}
-        isDark={hero.isDark}
-        name={hero.name}
-        image={hero.image}
-        age={hero.age}
-        weapons={hero.weapons}
-        />
-      ))}
+        {heroes.map((hero) => (
+          // odniesienie do HeroCard
+          //dodanie propsów
+          <HeroCard
+            //każde znaczenie zostaje przekazane propsem do HeroCard, tam zastosowane
+            key={hero.id}
+            isDark={hero.isDark}
+            name={hero.name}
+            image={hero.image}
+            age={hero.age}
+            weapons={hero.weapons}
+          />
+        ))}
       </section>
     </div>
   );
