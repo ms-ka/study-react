@@ -6,7 +6,7 @@ import './index.css';
 // import funkcji komponenta
 // import Lesson02 from './lessons/lesson02/Lesson02';
 //import Lesson04 from './lessons/lesson04/Lesson04';
-//import Homework04 from './components/homework/Homework04';
+// import Homework04 from './components/homework/Homework04';
 import Lesson05 from './lessons/lesson05/Lesso05';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +21,7 @@ root.render(
     {/* <Lesson02/> */}
     {/* <Homework02 /> */}
     {/* <Homework03 /> */}
+    {/* <Homework04/> */}
     <Lesson05/>
 
 </>

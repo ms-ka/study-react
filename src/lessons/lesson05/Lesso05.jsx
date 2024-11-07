@@ -1,5 +1,6 @@
 import { heroes } from "./data";
 import "./lesson05.css";
+import HeroCard from "../../components/gallery/HeroCard";
 
 function Lesson05() {
   console.log(heroes);
@@ -8,21 +9,16 @@ function Lesson05() {
       <h2>Lesson 05</h2>
       <p>React map() components</p>
       <section className="grid-container">
-        {heroes.map((hero, index) => (
-          <article className={hero.isDark ? 'hero-dark' : 'hero-light'} key={index}>
-            <h3>{hero.name}</h3>
-            <p>
-              {hero.name} is {hero.age} years old
-           </p>
-            <img src={hero.image} alt="" />
-            <p>
-            Hero weapons: {hero.weapons.map((weapon, index)=>
-            (
-                <span className='weapon' key={index}>|{weapon}</span>
-            ))}
-            </p>
-          </article>
-        ))}
+      {heroes.map(hero=>(
+        <HeroCard 
+        key={hero.id}
+        isDark={hero.isDark}
+        name={hero.name}
+        image={hero.image}
+        age={hero.age}
+        weapons={hero.weapons}
+        />
+      ))}
       </section>
     </div>
   );
